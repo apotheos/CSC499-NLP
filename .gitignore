@@ -1,0 +1,6 @@
+# Python
+*.pyc
+
+# IDE Garbage
+*.iml
+/.idea
