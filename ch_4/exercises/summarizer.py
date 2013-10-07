@@ -107,8 +107,10 @@ def main():
     corpus = PlaintextCorpusReader('../../corpora/news', '.*', encoding='UTF-8')
 
     article_sents = corpus.sents(fileids='gravity_review.txt')
+    # article_sents = corpus.sents(fileids='wwII.txt')
 
     summary = Summary(article_sents, preprocessor)
+    # summary = Summary(article_sents)
 
     print '<<<<<<<<<<<<<<<<<<<<< DENSITY SCORING >>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
     strategy = DensityScoreStrategy()
